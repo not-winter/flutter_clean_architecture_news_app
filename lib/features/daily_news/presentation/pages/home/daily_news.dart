@@ -59,6 +59,8 @@ class Page extends StatelessWidget {
               final article = state.articles![index];
               return ArticleItem(
                 article: article,
+                onArticlePressed: (article) =>
+                    navigator.onArticlePressed(article),
               );
             },
           );
